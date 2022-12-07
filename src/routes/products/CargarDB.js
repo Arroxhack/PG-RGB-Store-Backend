@@ -10,7 +10,7 @@ const {Products} = require('./products.json');
 router.post('/', async (req, res, next) => {
   try {     
     const arr = Object.values(Products)
-    console.log(arr)
+    arr.map(p => console.log(p))
     return res.send(200)
     arr.map( async p=>{const newProduct = await Products.create({
         name : p.name,
