@@ -7,7 +7,7 @@ const { Products } = require("./products.json");
 // const api = 'https://pg-api-6f759-default-rtdb.firebaseio.com/Products.json';
 
 router.post("/", async (req, res, next) => {
-  try {
+  try { 
     const result = Object.values(Products);
 
     if (result) {
